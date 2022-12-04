@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="a.css">
+    <title>index</title>
+</head>
+<body>
+    <div class="box">
+        <h2><a href="" style="text-decoration:none ;">Hotel Hebat</a></h2>
+        <div class="menu">
+            <a href=""><img src="Logout.png" alt=""></a>
+            <a href="#">fasilitas</a>
+            <a href="#">Kamar</a>
+            <a href="#">Home</a>
+        </div>
+        <div class="banner"></div>
+        <div class="konten">
+            <form action="">
+                <label for="awal">tanggal cek in</label> <br>
+                <input type="date" name="awalcek">
+                <label for="akhir">tanggal cek out</label> <br>
+                <input type="date" name="akhircek">
+                <label for="jumlahkam">jumlahkamar</label>
+                <input type="number" name="jumlah">
+                <input type="submit" onclick="openform()" name="kirim" value="pesan">
+                <div id="form22">
+                    <h4>Form pemesanan</h4>
+                    <label for="nama">nama pemesan</label>
+                    <input type="text" name="nama">
+                    <label for="emai">email</label>
+                    <input type="email" name="emai">
+                    <label for="hp">no handphone</label>
+                    <input type="text" name="hp">
+                    <label for="tamu">nama tamu</label>
+                    <input type="text" name="tamu">
+                    <label for="tipe">tipe kamar</label>     
+                    <select name="kamar">
+                        <option value="deluxe">deluxe</option>
+                        <option value="superior">superior</option>
+                    </select><br><br>
+                </div>
+                <script type="text/javascript">
+                    var text = document.getElementsByTagName("kirim");
+                    text[0].onclick = function(){
+                    text[0].classList.toggle("form22");
+                    }
+                </script>
+            </form>
+            
+            <h1>Tentang kami</h1>
+            <p>dasfdshjagbfhudsagftuyadsuhfgadhsufgyuhads asduvgfyhudsgyudsyfga fvyasdfgdsuygfyds sdgyuahuyadsgyudsagyadsg</p>
+        </div>
+    </div>
+    
+
+</body>
+</html>
